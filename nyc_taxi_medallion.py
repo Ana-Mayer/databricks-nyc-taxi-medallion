@@ -153,11 +153,4 @@ s = spark.table("silver_trips")
 # MAGIC -- Time travel: query the table as of its first version
 # MAGIC SELECT count(*) FROM silver_trips VERSION AS OF 0
 
-# COMMAND ----------
 
-# MAGIC %md
-# MAGIC ## Next steps
-# MAGIC - Create an **AI/BI Dashboard** on the three `gold_*` tables
-# MAGIC - Ask questions of the gold tables with **Genie**
-# MAGIC - Schedule this notebook as a **Job** (Workflows) to make it a real pipeline
-# MAGIC - Port to **Lakeflow Spark Declarative Pipelines** with `EXPECT` data quality constraints
