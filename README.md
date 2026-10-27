@@ -1,6 +1,6 @@
 # NYC Taxi Medallion Pipeline on Databricks
 
-A bronze → silver → gold data pipeline built on Databricks with PySpark, Delta Lake and Unity Catalog, using the built-in `samples.nyctaxi.trips` dataset.
+A bronze --> silver --> gold data pipeline built on Databricks with PySpark, Delta Lake and Unity Catalog, using the built-in `samples.nyctaxi.trips` dataset.
 
 | Layer | Table | What it does |
 |---|---|---|
@@ -18,8 +18,3 @@ The silver step prints a data-quality report showing how many rows were rejected
 ## Delta features demonstrated
 - `DESCRIBE HISTORY` and time travel (`VERSION AS OF`)
 - Unity Catalog three-level namespace and lineage
-
-## Next steps
-- AI/BI dashboard and Genie space on the gold tables
-- Schedule as a Databricks Job
-- Port to Lakeflow Declarative Pipelines with `EXPECT` quality constraints
